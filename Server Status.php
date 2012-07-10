@@ -49,7 +49,7 @@
 <!-- Server Status -->
 <?php
 $ip = "localhost"; //local adress or external ip
-$porta = "2106"; //LS port
+$porta = "2106"; //LoginServer port
 if (! $sock = @fsockopen($ip, $porta, $num, $error, 5))
 echo "<span class=\"dif\">Login Server : </span><img src=\"img/offline.png\"><span class=\"offline\">  OFFLINE  <img src=\"img/offline.png\"></span>";
 else{
@@ -60,7 +60,7 @@ fclose($sock);
 <br>
 <?php
 $ip = "localhost"; //local adress or external ip
-$porta = "7777"; //GS Port
+$porta = "7777"; //GameServer Port
 if (! $sock = @fsockopen($ip, $porta, $num, $error, 5))
 echo "<span class=\"dif\">Game Server : </span><img src=\"img/offline.png\"><span class=\"offline\">  OFFLINE  <img src=\"img/offline.png\"></span>";
 else{
